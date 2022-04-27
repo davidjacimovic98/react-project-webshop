@@ -1,0 +1,62 @@
+.cart_btn_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 130%;
+}
+
+.cart_btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #000;
+  text-decoration: none;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+.cart_container {
+  display: flex;
+  flex-direction: row;
+}
+
+.cart_icon {
+  margin-top: 5px;
+  margin-left: 3px;
+}
+
+.cart_value {
+  font-size: 12px;
+  margin-left: -8px;
+  margin-top: -5px;
+  background-color: rgb(169, 108, 108);
+  border-radius: 50%;
+  height: 24px;
+  width: 24px;
+  color: #fff;
+  text-align: center;
+}
+
+.cart_value p {
+  margin-top: 3px;
+  margin-right: -2px;
+}
+
+.auth_btn {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  margin-left: -30px;
+  letter-spacing: 2px;
+}
+
+.auth_btn:hover {
+  cursor: pointer;
+}
+
+.login_icon {
+  margin-left: 5px;
+}

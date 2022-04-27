@@ -1,0 +1,77 @@
+.navbar_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  margin-left: 3%;
+  margin-top: 2%;
+}
+
+.open_sidebar_btn {
+  border: none;
+  background-color: transparent;
+  font-size: 30px;
+  color: rgb(169, 108, 108);
+  margin-right: 4%;
+  margin-top: 3%;
+}
+
+.open_sidebar_btn:hover {
+  cursor: pointer;
+}
+
+.nav_links {
+  visibility: hidden;
+}
+
+.cart_and_login {
+  visibility: hidden;
+}
+
+@media screen and (min-width: 1000px) {
+  .open_sidebar_btn {
+    visibility: hidden;
+  }
+
+  .nav_links {
+    visibility: visible;
+  }
+
+  .cart_and_login {
+    visibility: visible;
+    margin-right: 10%;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav_links {
+    list-style: none;
+    width: 50%;
+    margin-left: 20%;
+  }
+
+  .nav_links li {
+    float: left;
+    margin-right: 8%;
+  }
+
+  .nav_links li a {
+    text-decoration: none;
+    color: #000;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+  }
+
+  .logo {
+    margin-left: 50%;
+  }
+}

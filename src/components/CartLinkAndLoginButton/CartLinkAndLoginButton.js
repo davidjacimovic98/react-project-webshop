@@ -11,7 +11,7 @@ const CartLinkAndLoginButton = () => {
         <span className={styles.cart_container}>
           <FaShoppingCart className={styles.cart_icon} />
           <span className={styles.cart_value}>
-            <p>12</p>
+            <p>0</p>
           </span>
         </span>
       </Link>

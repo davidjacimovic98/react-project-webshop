@@ -1,3 +1,7 @@
+.container {
+  width: 100%;
+}
+
 .navbar_header {
   display: flex;
   flex-direction: row;
@@ -25,24 +29,24 @@
 }
 
 .nav_links {
-  visibility: hidden;
+  display: none;
 }
 
 .cart_and_login {
-  visibility: hidden;
+  display: none;
 }
 
 @media screen and (min-width: 1000px) {
   .open_sidebar_btn {
-    visibility: hidden;
+    display: none;
   }
 
   .nav_links {
-    visibility: visible;
+    display: block;
   }
 
   .cart_and_login {
-    visibility: visible;
+    display: block;
     margin-right: 15%;
   }
 

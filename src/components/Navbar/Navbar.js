@@ -4,7 +4,7 @@ import logo from "../../images/logo.svg";
 import { FaBars } from "react-icons/fa";
 import { links } from "../../utils/constants";
 import { Link } from "react-router-dom";
-import CartLinkAndLoginButton from "./CartLinkAndLoginButton/CartLinkAndLoginButton";
+import CartLinkAndLoginButton from "../CartLinkAndLoginButton/CartLinkAndLoginButton";
 
 const Navbar = () => {
   return (

@@ -1,0 +1,137 @@
+.sidebar_container {
+  background-color: #fff;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  position: fixed;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-100%);
+  transition: all 0.5s linear;
+}
+
+.sidebar_container_active {
+  background-color: #fff;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  transform: translateX(0);
+  transition: all 0.5s linear;
+}
+
+.sidebar_header {
+  margin-top: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidebar_header img {
+  height: 45px;
+  margin-left: 20px;
+  top: 5px;
+}
+
+.sidebar_header button {
+  background-color: transparent;
+  border: none;
+  color: red;
+  font-size: 24px;
+  margin-right: 5%;
+}
+
+.sidebar_header button:hover {
+  cursor: pointer;
+}
+
+.sidebar_links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -50vh;
+  list-style: none;
+  width: 100%;
+  margin-bottom: 5vh;
+}
+
+.sidebar_links li {
+  padding: 2.5vh 10%;
+  width: 100%;
+  transform: translateX(0);
+  transition: all 0.5s ease-out;
+}
+
+.sidebar_links li:hover {
+  background-color: rgba(169, 108, 108, 0.1);
+  cursor: pointer;
+  transform: translateX(10px);
+  transition: all 0.5s ease-out;
+}
+
+.sidebar_links li a {
+  text-decoration: none;
+  color: #000;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+.sidebar_links li:hover a {
+  transform: translateX(10px);
+}
+
+.checkout {
+  position: fixed;
+  margin-top: -23.5vh;
+  list-style: none;
+  padding: 2.5vh 0;
+  padding-left: 40px;
+  width: 100%;
+  transform: translateX(0);
+  transition: all 0.5s ease-out;
+}
+
+.checkout a {
+  text-decoration: none;
+  color: #000;
+  letter-spacing: 1px;
+}
+
+.checkout:hover {
+  background-color: rgba(169, 108, 108, 0.1);
+  cursor: pointer;
+  transform: translateX(10px);
+  transition: all 0.5s ease-out;
+}
+
+.cart_and_login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 1000px) {
+  .sidebar_container_active {
+    display: none;
+  }
+
+  .sidebar_container {
+    display: none;
+  }
+}

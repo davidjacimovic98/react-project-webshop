@@ -43,7 +43,7 @@
 
   .cart_and_login {
     visibility: visible;
-    margin-right: 10%;
+    margin-right: 15%;
   }
 
   .container {
@@ -51,6 +51,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    margin-top: 1%;
   }
 
   .nav_links {

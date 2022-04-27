@@ -5,13 +5,16 @@ import { FaBars } from "react-icons/fa";
 import { links } from "../../utils/constants";
 import { Link } from "react-router-dom";
 import CartLinkAndLoginButton from "../CartLinkAndLoginButton/CartLinkAndLoginButton";
+import { useProductsContext } from "../../context/products_context";
 
 const Navbar = () => {
+  const { openSidebar } = useProductsContext();
+
   return (
     <div className={styles.container}>
       <div className={styles.navbar_header}>
         <img src={logo} alt="logo" className={styles.logo} />
-        <button className={styles.open_sidebar_btn}>
+        <button className={styles.open_sidebar_btn} onClick={openSidebar}>
           <FaBars />
         </button>
       </div>

@@ -1,0 +1,15 @@
+.main_div {
+  background-color: rgba(169, 108, 108, 0.4);
+  padding: 5vh 0;
+  color: rgb(75, 61, 61);
+  text-transform: capitalize;
+}
+
+.main_div h3 {
+  margin-left: 10%;
+}
+
+.main_div a {
+  text-decoration: none;
+  color: rgb(169, 108, 108);
+}

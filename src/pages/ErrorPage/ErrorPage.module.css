@@ -1,0 +1,28 @@
+.error_container {
+  background-color: rgba(169, 108, 108, 0.4);
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.error_container h1 {
+  font-size: 100px;
+}
+
+.error_container p {
+  font-size: 20px;
+  margin-top: -10vh;
+  margin-bottom: 5vh;
+}
+
+.error_container a {
+  text-decoration: none;
+  background-color: rgba(169, 108, 108);
+  color: #fff;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+}

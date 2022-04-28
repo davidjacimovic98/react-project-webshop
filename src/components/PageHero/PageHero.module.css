@@ -1,5 +1,5 @@
 .main_div {
-  background-color: rgba(169, 108, 108, 0.4);
+  background-color: rgba(90, 7, 7, 0.193);
   padding: 5vh 0;
   color: rgb(75, 61, 61);
   text-transform: capitalize;
@@ -7,6 +7,8 @@
 
 .main_div h3 {
   margin-left: 10%;
+  font-size: 30px;
+  letter-spacing: 1px;
 }
 
 .main_div a {

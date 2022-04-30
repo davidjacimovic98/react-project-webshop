@@ -70,6 +70,11 @@
     margin-right: 8%;
   }
 
+  .nav_links li a:hover {
+    border-bottom: 2px solid rgb(169, 108, 108);
+    padding: 5px 0;
+  }
+
   .nav_links li a {
     text-decoration: none;
     color: #000;

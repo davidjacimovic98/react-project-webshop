@@ -1,0 +1,57 @@
+.contact_container {
+  padding: 5vh 30px;
+}
+
+.contact_container h3 {
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+.contact_body form input {
+  width: 275px;
+  padding: 10px 15px;
+  border: 2px solid #000;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-right: none;
+}
+
+.contact_body form button {
+  padding: 10px 15px;
+  background-color: rgb(169, 108, 108);
+  border: 2px solid #000;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  transition: all 0.5s ease;
+}
+
+.contact_body form button:hover {
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+
+@media screen and (min-width: 1000px) {
+  .contact_container {
+    margin: 0 10vh;
+    padding: 25vh 0;
+  }
+  .contact_body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .contact_body form {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contact_body p {
+    letter-spacing: 1px;
+    line-height: 30px;
+    width: 500px;
+  }
+}

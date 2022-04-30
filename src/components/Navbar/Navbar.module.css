@@ -12,7 +12,7 @@
 
 .logo {
   height: 50px;
-  margin-left: 3%;
+  margin-left: 5vw;
   margin-top: 2%;
 }
 
@@ -78,6 +78,6 @@
   }
 
   .logo {
-    margin-left: 50%;
+    margin-left: 35%;
   }
 }

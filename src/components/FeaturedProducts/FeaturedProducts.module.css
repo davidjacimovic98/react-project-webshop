@@ -1,0 +1,29 @@
+.featured_container {
+  padding: 10vh 30px;
+  background-color: lightblue;
+}
+
+.featured_header {
+  text-align: center;
+}
+
+.featured_header h2 {
+  text-transform: capitalize;
+  font-size: 30px;
+  color: rgb(48, 41, 41);
+}
+
+.underline {
+  border-bottom: 3px solid rgb(169, 108, 108);
+  width: 100px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1000px) {
+  .featured {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 5vh 5vh;
+  }
+}

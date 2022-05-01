@@ -44,11 +44,12 @@
 
   .nav_links {
     display: block;
+    margin-right: -20vw;
   }
 
   .cart_and_login {
     display: block;
-    margin-right: 15%;
+    margin-right: 10vw;
   }
 
   .container {

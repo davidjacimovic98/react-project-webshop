@@ -1,0 +1,14 @@
+.stars_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 260px;
+}
+
+.stars {
+  color: gold;
+}
+
+.reviews {
+  color: rgb(48, 41, 41);
+}

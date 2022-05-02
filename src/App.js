@@ -7,6 +7,7 @@ import ErrorPage from "./pages/ErrorPage/ErrorPage";
 import AboutPage from "./pages/AboutPage/AboutPage";
 import CheckoutPage from "./pages/CheckoutPage/CheckoutPage";
 import PrivateRoute from "./pages/PrivateRoute/PrivateRoute";
+import SingleProductPage from "./pages/SingleProductPage/SingleProductPage";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/products/:id" element={<SingleProductPage />} />
         <Route
           path="/checkout"
           element={

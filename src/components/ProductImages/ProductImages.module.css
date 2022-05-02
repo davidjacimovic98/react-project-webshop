@@ -1,0 +1,49 @@
+.images_container {
+  display: grid;
+  gap: 2vh;
+  margin: 5vh 0;
+}
+
+.main_image {
+  height: 300px;
+  width: 400px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.gallery {
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.gallery img {
+  height: 50px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.gallery img:hover {
+  cursor: pointer;
+}
+
+.active {
+  border: 2px solid rgb(169, 108, 108);
+}
+
+@media screen and (min-width: 1000px) {
+  .main_image {
+    height: 400px;
+    width: 500px;
+  }
+
+  .gallery {
+    width: 500px;
+  }
+
+  .gallery img {
+    width: 90px;
+    height: 70px;
+  }
+}

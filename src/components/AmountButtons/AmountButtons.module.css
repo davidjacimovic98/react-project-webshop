@@ -1,0 +1,18 @@
+.amount_container {
+  width: 116px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.amount_btn {
+  background-color: transparent;
+  border: none;
+  color: rgb(48, 41, 41);
+}
+
+.amount_btn:hover {
+  cursor: pointer;
+  color: rgb(48, 41, 41);
+}

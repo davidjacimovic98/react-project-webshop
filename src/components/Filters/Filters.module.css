@@ -1,0 +1,198 @@
+.filters_container {
+  padding-bottom: 5vh;
+  padding-top: 1.5vh;
+}
+
+.input input {
+  background-color: rgba(128, 128, 128, 0.2);
+  border: none;
+  padding: 10px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  border-radius: 5px;
+}
+
+.categories_main h5 {
+  text-transform: capitalize;
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: rgb(48, 41, 41);
+  margin-top: 20px;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: -15px;
+}
+
+.btn {
+  margin-bottom: 1vh;
+  background-color: transparent;
+  border: none;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  color: rgb(54, 99, 114);
+}
+
+.categories button:hover {
+  cursor: pointer;
+}
+
+.active {
+  margin-bottom: 1vh;
+  background-color: transparent;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  color: rgb(54, 99, 114);
+  border: none;
+  border-bottom: 1px solid rgb(54, 99, 114);
+}
+
+.companies {
+  margin-top: -20px;
+}
+
+.companies h5 {
+  text-transform: capitalize;
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: rgb(48, 41, 41);
+  margin-bottom: 10px;
+}
+
+.companies select {
+  border: none;
+  background-color: rgba(128, 128, 128, 0.2);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.color_btn {
+  border: none;
+  border-radius: 50%;
+  margin-right: 10px;
+  opacity: 0.5;
+  text-align: center;
+  height: 20px;
+  width: 20px;
+}
+
+.colors {
+  margin-top: -10px;
+}
+
+.colors h5 {
+  text-transform: capitalize;
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: rgb(48, 41, 41);
+}
+
+.active_color {
+  border: none;
+  border-radius: 50%;
+  margin-right: 10px;
+  opacity: 1;
+  text-align: center;
+  height: 20px;
+  width: 20px;
+}
+
+.check_icon {
+  color: #fff;
+  font-size: 8px;
+}
+
+.btn_container {
+  display: grid;
+  grid-template-columns: repeat(6, 30px);
+  margin-top: -10px;
+}
+
+.color_btn:hover {
+  cursor: pointer;
+}
+
+.active:hover {
+  cursor: pointer;
+}
+
+.all_btn {
+  margin-bottom: 1vh;
+  background-color: transparent;
+  border: none;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  color: rgb(54, 99, 114);
+  width: 100%;
+  margin-left: -10px;
+}
+
+.all_active {
+  margin-bottom: 1vh;
+  background-color: transparent;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  color: rgb(54, 99, 114);
+  border: none;
+  border-bottom: 1px solid rgb(54, 99, 114);
+  width: 100%;
+  margin-left: -10px;
+}
+
+.all_btn:hover,
+.all_active:hover {
+  cursor: pointer;
+}
+
+.price_container {
+  margin-top: -10px;
+}
+
+.price_container h5 {
+  text-transform: capitalize;
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: rgb(48, 41, 41);
+}
+
+.price_container p {
+  margin-top: -20px;
+  color: rgb(54, 99, 114);
+  margin-bottom: 5px;
+}
+
+.shipping {
+  margin-top: 3vh;
+}
+
+.shipping label {
+  text-transform: capitalize;
+  color: rgb(48, 41, 41);
+  margin-right: 10px;
+}
+
+.clear_btn {
+  background-color: rgb(202, 7, 7);
+  border: none;
+  color: #fff;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 3vh;
+}
+
+.clear_btn:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 850px) {
+  .content {
+    position: sticky;
+    top: 30px;
+  }
+}

@@ -8,6 +8,7 @@ import AboutPage from "./pages/AboutPage/AboutPage";
 import CheckoutPage from "./pages/CheckoutPage/CheckoutPage";
 import PrivateRoute from "./pages/PrivateRoute/PrivateRoute";
 import SingleProductPage from "./pages/SingleProductPage/SingleProductPage";
+import ProductsPage from "./pages/ProductsPage/ProductsPage";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/products" element={<ProductsPage />} />
         <Route path="/products/:id" element={<SingleProductPage />} />
         <Route
           path="/checkout"

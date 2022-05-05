@@ -62,3 +62,9 @@ footer h5 {
 footer p {
   color: rgb(169, 108, 108);
 }
+
+@media screen and (min-width: 1000px) {
+  .product_container img {
+    height: 150px;
+  }
+}

@@ -1,0 +1,62 @@
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 65px;
+}
+
+.main hr {
+  width: 100%;
+}
+
+.main form label {
+  text-transform: capitalize;
+}
+
+.view_btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 5px;
+  height: 25px;
+}
+
+.btn_container button:hover {
+  cursor: pointer;
+}
+
+.active {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  border: 1px solid #000;
+  border-radius: 5px;
+  height: 25px;
+  color: #fff;
+}
+
+.sort_input {
+  margin-left: 20px;
+  border: none;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 750px) {
+  .main {
+    display: grid;
+    grid-template-columns: auto auto 1fr auto;
+    align-items: center;
+    column-gap: 20px;
+  }
+}

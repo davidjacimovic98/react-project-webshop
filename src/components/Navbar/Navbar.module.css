@@ -13,7 +13,7 @@
 .logo {
   height: 50px;
   margin-left: 5vw;
-  margin-top: 2%;
+  margin-top: 10px;
 }
 
 .open_sidebar_btn {
@@ -21,8 +21,8 @@
   background-color: transparent;
   font-size: 30px;
   color: rgb(169, 108, 108);
-  margin-right: 4%;
-  margin-top: 3%;
+  margin-right: 10px;
+  margin-top: 5px;
 }
 
 .open_sidebar_btn:hover {
@@ -57,18 +57,18 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-top: 1%;
+    margin-top: 10px;
   }
 
   .nav_links {
     list-style: none;
     width: 50%;
-    margin-left: 20%;
+    margin-left: 20vw;
   }
 
   .nav_links li {
     float: left;
-    margin-right: 8%;
+    margin-right: 5vw;
   }
 
   .nav_links li a:hover {
@@ -84,6 +84,6 @@
   }
 
   .logo {
-    margin-left: 35%;
+    margin-left: 50px;
   }
 }

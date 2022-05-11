@@ -1,0 +1,29 @@
+.main {
+  height: 67.8vh;
+  margin-top: 10vh;
+  text-align: center;
+}
+
+.main h2 {
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+
+.main a {
+  text-decoration: none;
+  color: #fff;
+  background-color: rgb(169, 108, 108);
+  padding: 5px 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.5s linear;
+}
+
+.main a:hover {
+  cursor: pointer;
+  background-color: rgba(169, 108, 108, 0.5);
+  color: rgb(11, 40, 50);
+  transition: all 0.5s linear;
+}

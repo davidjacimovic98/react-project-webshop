@@ -1,0 +1,33 @@
+.container {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    display: block;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr auto;
+    justify-items: center;
+    column-gap: 10px;
+  }
+
+  .content h5 {
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-weight: 400;
+  }
+
+  .content span {
+    width: 20px;
+    height: 20px;
+  }
+
+  .hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 96%;
+  }
+}

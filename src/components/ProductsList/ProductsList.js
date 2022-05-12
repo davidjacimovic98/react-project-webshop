@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./ProductsList.module.css";
 import { useFilterContext } from "../../context/filters_context";
 import GridView from "../GridView/GridView";
 import ListView from "../ListView/ListView";

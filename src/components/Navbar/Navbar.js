@@ -6,9 +6,12 @@ import { links } from "../../utils/constants";
 import { Link } from "react-router-dom";
 import CartLinkAndLoginButton from "../CartLinkAndLoginButton/CartLinkAndLoginButton";
 import { useProductsContext } from "../../context/products_context";
+import { useUserContext } from "../../context/user_context";
 
 const Navbar = () => {
   const { openSidebar } = useProductsContext();
+
+  const { myUser } = useUserContext();
 
   return (
     <div className={styles.container}>
@@ -27,6 +30,11 @@ const Navbar = () => {
             </li>
           );
         })}
+        {myUser && (
+          <li>
+            <Link to="/checkout">checkout</Link>
+          </li>
+        )}
       </ul>
       <div className={styles.cart_and_login}>
         <CartLinkAndLoginButton />

@@ -6,17 +6,32 @@ import reportWebVitals from "./reportWebVitals";
 import { ProductsProvider } from "./context/products_context";
 import { FilterProvider } from "./context/filters_context";
 import { CartProvider } from "./context/cart_context";
+import { Auth0Provider } from "@auth0/auth0-react";
+import { UserProvider } from "./context/user_context";
+
+// dev-l3dgj8qo.us.auth0.com
+
+// 2PPYivgTFH6Rn5VL4znte4t5eY9IhjMx
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <ProductsProvider>
-      <FilterProvider>
-        <CartProvider>
-          <App />
-        </CartProvider>
-      </FilterProvider>
-    </ProductsProvider>
+    <Auth0Provider
+      domain="dev-l3dgj8qo.us.auth0.com"
+      clientId="2PPYivgTFH6Rn5VL4znte4t5eY9IhjMx"
+      redirectUri={window.location.origin}
+      cacheLocation="localstorage"
+    >
+      <UserProvider>
+        <ProductsProvider>
+          <FilterProvider>
+            <CartProvider>
+              <App />
+            </CartProvider>
+          </FilterProvider>
+        </ProductsProvider>
+      </UserProvider>
+    </Auth0Provider>
   </React.StrictMode>
 );
 

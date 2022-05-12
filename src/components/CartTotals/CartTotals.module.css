@@ -77,6 +77,28 @@
   transition: all 0.5s linear;
 }
 
+.btn_login {
+  background-color: rgb(169, 108, 108);
+  text-decoration: none;
+  width: 400px;
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: none;
+  transition: all 0.5s linear;
+}
+
+.btn_login:hover {
+  background-color: rgba(169, 108, 108, 0.5);
+  color: rgb(11, 40, 50);
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
+
 @media screen and (min-width: 800px) {
   .main {
     align-items: flex-end;

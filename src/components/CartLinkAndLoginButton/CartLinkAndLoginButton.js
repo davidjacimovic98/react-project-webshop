@@ -1,14 +1,17 @@
 import React from "react";
 import styles from "./CartLinkAndLoginButton.module.css";
-import { FaShoppingCart, FaUserPlus } from "react-icons/fa";
+import { FaShoppingCart, FaUserPlus, FaUserMinus } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useProductsContext } from "../../context/products_context";
 import { useCartContext } from "../../context/cart_context";
+import { useUserContext } from "../../context/user_context";
 
 const CartLinkAndLoginButton = () => {
   const { closeSidebar } = useProductsContext();
 
   const { total_items } = useCartContext();
+
+  const { loginWithRedirect, myUser, logout } = useUserContext();
 
   return (
     <div className={styles.cart_btn_container}>
@@ -21,9 +24,23 @@ const CartLinkAndLoginButton = () => {
           </span>
         </span>
       </Link>
-      <button type="button" className={styles.auth_btn}>
-        Login <FaUserPlus className={styles.login_icon} />
-      </button>
+      {myUser ? (
+        <button
+          type="button"
+          className={styles.auth_btn}
+          onClick={() => logout({ returnTo: window.location.origin })}
+        >
+          Logout <FaUserMinus className={styles.login_icon} />
+        </button>
+      ) : (
+        <button
+          type="button"
+          className={styles.auth_btn}
+          onClick={loginWithRedirect}
+        >
+          Login <FaUserPlus className={styles.login_icon} />
+        </button>
+      )}
     </div>
   );
 };

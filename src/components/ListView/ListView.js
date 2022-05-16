@@ -1,5 +1,4 @@
 import React from "react";
-import products_reducer from "../../reducers/products_reducer";
 import { formatPrice } from "../../utils/helpers";
 import styles from "./ListView.module.css";
 import { Link } from "react-router-dom";

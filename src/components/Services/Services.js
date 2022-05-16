@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./Services.module.css";
 import { services } from "../../utils/constants";
-import { GiCompass } from "react-icons/gi";
 
 const Services = () => {
   return (

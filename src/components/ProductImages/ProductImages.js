@@ -6,7 +6,7 @@ const ProductImages = ({ images = [{ url: "" }] }) => {
 
   return (
     <div className={styles.images_container}>
-      <img src={mainImage.url} alt="main image" className={styles.main_image} />
+      <img src={mainImage.url} alt="main" className={styles.main_image} />
       <div className={styles.gallery}>
         {images.map((image, index) => {
           return (

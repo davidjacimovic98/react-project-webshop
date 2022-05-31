@@ -49,6 +49,12 @@
   display: none;
 }
 
+@media screen and (max-width: 370px) {
+  .hero_container {
+    padding-bottom: 5vh;
+  }
+}
+
 @media screen and (min-width: 1000px) {
   .hero_container {
     display: flex;

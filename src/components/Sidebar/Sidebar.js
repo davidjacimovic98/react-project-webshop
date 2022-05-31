@@ -31,19 +31,15 @@ const Sidebar = () => {
         {links.map((link) => {
           const { id, text, url } = link;
           return (
-            <li key={id}>
-              <Link to={url} onClick={closeSidebar}>
-                {text}
-              </Link>
-            </li>
+            <Link to={url} onClick={closeSidebar} key={id}>
+              <li>{text}</li>
+            </Link>
           );
         })}
         {myUser && (
-          <li className={styles.checkout}>
-            <Link to="/checkout" onClick={closeSidebar}>
-              Checkout
-            </Link>
-          </li>
+          <Link to="/checkout" onClick={closeSidebar}>
+            <li className={styles.checkout}>Checkout</li>
+          </Link>
         )}
       </ul>
       <div className={styles.cart_and_login}>

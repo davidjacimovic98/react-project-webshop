@@ -15,7 +15,7 @@
   justify-content: space-between;
   align-items: flex-start;
   border: 1px solid #000;
-  width: 300px;
+  width: 60vw;
   border-radius: 5px;
   padding: 0 50px;
 }
@@ -60,7 +60,7 @@
 .main a {
   background-color: rgb(169, 108, 108);
   text-decoration: none;
-  width: 390px;
+  width: 85vw;
   margin-top: 10px;
   border-radius: 5px;
   padding: 5px;
@@ -81,7 +81,7 @@
 .btn_login {
   background-color: rgb(169, 108, 108);
   text-decoration: none;
-  width: 400px;
+  width: 87vw;
   margin-top: 10px;
   border-radius: 5px;
   padding: 5px;

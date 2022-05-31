@@ -32,6 +32,27 @@
   border: 2px solid rgb(169, 108, 108);
 }
 
+@media screen and (max-width: 500px) {
+  .main_image {
+    height: 300px;
+    width: 85vw;
+    object-fit: contain;
+  }
+
+  .gallery {
+    width: 85vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .gallery img {
+    height: 5vh;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+}
+
 @media screen and (min-width: 1000px) {
   .main_image {
     height: 400px;
